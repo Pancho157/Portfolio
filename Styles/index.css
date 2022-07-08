@@ -1,0 +1,112 @@
+/* -------------------------Estilos por defecto---------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code Medium", monospace;
+}
+
+body {
+  background-image: url("../Assets/Images/main-bg.jpg");
+}
+
+.frontShadow {
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  position: relative;
+  bottom: 2.3rem;
+  left: -0.3rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.shadow {
+  display: block;
+  max-width: 90vw;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+/* -------------------------Estilos de la Landing Section---------------------------- */
+
+.landing {
+  width: 100%;
+  padding: 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Inicio de los botones de idioma */
+
+.landing__languageButtonsContainer {
+  width: 250px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.landing__button {
+  width: 120px;
+  height: 40px;
+}
+
+.landing__button:hover {
+  box-shadow: inset 120px 0 0 0 #1272e3;
+  color: white;
+}
+
+.landing__button.active {
+  background-color: #1272e3;
+  color: #ffffff;
+}
+
+.buttonShadow {
+  width: 120px;
+}
+
+/* Final de los botones de idioma */
+
+/* Inicio de la información de presentación */
+
+.landing__mainTextContainer {
+  width: 1000px;
+  max-width: 90%;
+  margin-left: 5%;
+  height: 350px;
+  max-height: 50vh;
+  padding: 30px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.landing__mainTextLineContainer {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nameShadowWidth {
+  width: 208px;
+}
+
+.roleShadowWidth {
+  width: 256px;
+}
+
+.textBox:hover {
+  cursor: pointer;
+  transform: rotate(5deg);
+}
