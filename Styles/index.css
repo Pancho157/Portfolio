@@ -25,10 +25,15 @@ body {
 .shadow {
   display: block;
   max-width: 90vw;
-  height: 40px;
+  height: 45px;
   border-radius: 10px;
   background-color: #ffffff;
   border: 2px solid #000000;
+}
+
+.hover--rotate:hover {
+  cursor: pointer;
+  transform: rotate(-2deg);
 }
 
 /* -------------------------Estilos de la Landing Section---------------------------- */
@@ -71,6 +76,7 @@ body {
 
 .buttonShadow {
   width: 120px;
+  height: 40px;
 }
 
 /* Final de los botones de idioma */
@@ -106,7 +112,30 @@ body {
   width: 256px;
 }
 
-.textBox:hover {
-  cursor: pointer;
-  transform: rotate(5deg);
+/* Final de la información de presentación */
+
+/* Inicio de las redes sociales en el Landing */
+
+.landing__socialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
+
+.landing__contactMeShadowWidth {
+  width: 170px;
+}
+
+.landing__socialIMG{
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  position: relative;
+  left: 23px;
+  top: -4px;
+  z-index: 1;
+}
+
+/* Final de las redes sociales en el Landing */
