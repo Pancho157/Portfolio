@@ -159,3 +159,60 @@ body {
 /* Final de las redes sociales en el Landing */
 
 /* ------------------------- Estilos de la Sección de Proyectos ---------------------------- */
+
+.projects {
+  width: 100%;
+  padding: 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projects__title {
+  width: 1000px;
+  max-width: 90%;
+}
+
+.projects__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Inicio de los proyectos de la Sección de Proyectos */
+
+.projects__project {
+  width: 550px;
+  max-width: 90vw;
+  padding: 20px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.projects__project > img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projects__projectRight {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.projects__projectTitle{
+  text-align: center;
+}
+
+/* Final de los proyectos de la Sección de Proyectos */
