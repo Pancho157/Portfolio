@@ -80,8 +80,8 @@
       <!-- * Inicio de la Sección de Proyectos -->
 
       <section class="projects">
-        <span class="projects__title shadow"></span>
-        <h2 class="projects__title frontShadow">Proyectos</h2>
+        <span class="mainTitle shadow"></span>
+        <h2 class="mainTitle frontShadow">Proyectos</h2>
 
         <section class="projects__container">
           <article class="projects__project">
@@ -186,7 +186,86 @@
 
       <!-- * Inicio de la Sección del Algoritmo de Clasificación -->
 
-      <section class="algorithm"></section>
+      <section class="algorithm">
+        <div class="about__titleContainer">
+          <span class="mainTitle shadow"></span>
+          <h2 class="mainTitle frontShadow">Algoritmos de Clasificación</h2>
+        </div>
+
+        <!-- Inicio de los controles del algoritmo -->
+
+        <section class="algorithm__controllerContainer">
+          <div class="algorithm__rangesContainer">
+            <div class="algorithm__range">
+              <p class="algorithm__text">Cantidad de columnas:</p>
+              <input
+                type="range"
+                min="10"
+                max="30"
+                step="1"
+                class="algorithm__columnsQuantity"
+              />
+              <p class="algorithm__text">10</p>
+            </div>
+
+            <div class="algorithm__range">
+              <p class="algorithm__text">Velocidad de la animación:</p>
+              <input
+                type="range"
+                min="5"
+                max="25"
+                step="1"
+                class="algorithm__columnsQuantity"
+              />
+              <p class="algorithm__text">1 ms</p>
+            </div>
+          </div>
+
+          <p class="algorithmSelector__text">Algoritmo:</p>
+          <div class="algorithm__algorithmSelector">
+            <div class="hover--rotate about__downloadCV">
+              <span class="shadow"></span>
+              <span class="frontShadow active">Bubble Sort</span>
+            </div>
+
+            <div class="hover--rotate about__downloadCV">
+              <span class="shadow"></span>
+              <span class="frontShadow">Selection Sort</span>
+            </div>
+
+            <div class="hover--rotate about__downloadCV">
+              <span class="shadow"></span>
+              <span class="frontShadow">Insertion Sort</span>
+            </div>
+
+            <div class="hover--rotate about__downloadCV">
+              <span class="shadow"></span>
+              <span class="frontShadow">Quick Sort</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final de los controles del algoritmo -->
+
+        <!-- Inicio de la visual del algoritmo -->
+
+        <section class="algorithm__algorithmContainer">
+
+          <div class="algorithm__bar inProgress" elementHeight="3"></div>
+          <div class="algorithm__bar inProgress" elementHeight="1"></div>
+          <div class="algorithm__bar" elementHeight="5"></div>
+          <div class="algorithm__bar" elementHeight="2"></div>
+          <div class="algorithm__bar" elementHeight="4"></div>
+          <div class="algorithm__bar" elementHeight="8"></div>
+          <div class="algorithm__bar" elementHeight="6"></div>
+          <div class="algorithm__bar sorted" elementHeight="9"></div>
+          <div class="algorithm__bar sorted" elementHeight="10"></div>
+          <div class="algorithm__bar sorted" elementHeight="10"></div>
+
+        </section>
+
+        <!-- Final de la visual del algoritmo -->
+      </section>
 
       <!-- * Final de la Sección del Algoritmo de Clasificación -->
 
@@ -194,8 +273,8 @@
 
       <section class="about">
         <div class="about__titleContainer">
-          <span class="projects__title shadow"></span>
-          <h2 class="projects__title frontShadow">Sobre mi</h2>
+          <span class="mainTitle shadow"></span>
+          <h2 class="mainTitle frontShadow">Sobre mi</h2>
         </div>
 
         <!-- Inicio de la Información personal -->

@@ -60,7 +60,12 @@ body {
   cursor: pointer;
 }
 
-/* -------------------------Estilos de la Landing Section---------------------------- */
+.mainTitle {
+  width: 1000px;
+  max-width: 90%;
+}
+
+/* * -------------------------Estilos de la Landing Section---------------------------- */
 
 .landing {
   width: 100%;
@@ -71,7 +76,7 @@ body {
   justify-content: space-evenly;
 }
 
-/* Inicio de los botones de idioma */
+/* * Inicio de los botones de idioma */
 
 .landing__languageButtonsContainer {
   width: 250px;
@@ -162,9 +167,9 @@ body {
   z-index: 1;
 }
 
-/* Final de las redes sociales en el Landing */
+/* * Final de las redes sociales en el Landing */
 
-/* ------------------------- Estilos de la Sección de Proyectos ---------------------------- */
+/* * -------------------------Estilos de la Sección de Proyectos---------------------------- */
 
 .projects {
   width: 100%;
@@ -175,11 +180,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.projects__title {
-  width: 1000px;
-  max-width: 90%;
 }
 
 .projects__container {
@@ -268,18 +268,94 @@ body {
   color: white;
 }
 
-/* Final de los proyectos de la Sección de Proyectos */
+/* * Final de los proyectos de la Sección de Proyectos */
 
-/* Inicio de la Sección del Algoritmo */
+/* * -------------------------Inicio de la Sección del Algoritmo---------------------------- */
 
 .algorithm {
   width: 100%;
   min-height: 100vh;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-/* Final de la Sección del Algoritmo */
+.algorithm__controllerContainer {
+  width: 1250px;
+  max-width: 90%;
+  padding: 20px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
 
-/* Inicio de la Sección del About Me */
+.algorithm__rangesContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.algorithm__range {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.algorithm__algorithmSelector {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.algorithmSelector__text {
+  margin: 20px 0 0 20px;
+}
+
+.frontShadow.active {
+    box-shadow: inset 200px 0 0 0 #1272e3;
+    color: white;
+    cursor: pointer;
+}
+
+.algorithm__algorithmContainer {
+  width: 1250px;
+  max-width: 90vw;
+  height: 500px;
+  padding: 20px 40px;
+  background-color: #3C3838;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.algorithm__bar {
+  width: 25px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.algorithm__bar.inProgress{
+  background-color: #EAEBB2;
+}
+
+.algorithm__bar.sorted{
+  background-color: #2BA153;
+}
+
+/* * Final de la Sección del Algoritmo */
+
+/* * -------------------------Inicio de la Sección del About Me---------------------------- */
 
 .about {
   width: 100%;
@@ -392,4 +468,6 @@ body {
 
 /* Final de la parte con las tecnologías */
 
-/* Final de la Sección del About Me */
+/* * Final de la Sección del About Me */
+
+/* * -------------------------Inicio de la Sección de Contacto---------------------------- */
