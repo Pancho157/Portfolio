@@ -187,7 +187,7 @@
       <!-- * Inicio de la Sección del Algoritmo de Clasificación -->
 
       <section class="algorithm">
-        <div class="about__titleContainer">
+        <div class="mainTitleContainer">
           <span class="mainTitle shadow"></span>
           <h2 class="mainTitle frontShadow">Algoritmos de Clasificación</h2>
         </div>
@@ -250,7 +250,6 @@
         <!-- Inicio de la visual del algoritmo -->
 
         <section class="algorithm__algorithmContainer">
-
           <div class="algorithm__bar inProgress" elementHeight="3"></div>
           <div class="algorithm__bar inProgress" elementHeight="1"></div>
           <div class="algorithm__bar" elementHeight="5"></div>
@@ -261,8 +260,12 @@
           <div class="algorithm__bar sorted" elementHeight="9"></div>
           <div class="algorithm__bar sorted" elementHeight="10"></div>
           <div class="algorithm__bar sorted" elementHeight="10"></div>
-
         </section>
+
+        <div class="algorithm__buttonsContainer">
+          <button class="algorithm__sortButtons">Ordenar</button>
+          <button class="algorithm__sortButtons">Parar Algoritmo</button>
+        </div>
 
         <!-- Final de la visual del algoritmo -->
       </section>
@@ -272,7 +275,7 @@
       <!-- * Inicio de la Sección del About Me -->
 
       <section class="about">
-        <div class="about__titleContainer">
+        <div class="mainTitleContainer">
           <span class="mainTitle shadow"></span>
           <h2 class="mainTitle frontShadow">Sobre mi</h2>
         </div>
@@ -310,7 +313,7 @@
 
           <div clear="all"></div>
 
-          <div class="hover--rotate about__downloadCV">
+          <div class="hover--rotate centerObject">
             <span class="shadow about__downloadShadow"></span>
             <span class="frontShadow">Descarga mi CV</span>
           </div>
@@ -430,6 +433,81 @@
       </section>
 
       <!-- * Final de la Sección del About Me -->
+
+      <!-- * Inicio de la Sección de Contacto -->
+
+      <section>
+        <div class="mainTitleContainer">
+          <span class="mainTitle shadow"></span>
+          <h2 class="mainTitle frontShadow">Contáctame!</h2>
+        </div>
+
+        <div class="contact__social">
+          <div class="landing__socialContainer">
+            <img
+              src="./Assets/Icons/linkedin.png"
+              alt="Icono de Github"
+              class="landing__socialIMG"
+            />
+            <div>
+              <span class="shadow"></span>
+              <span class="frontShadow hover--innerShadow">LinkedIn</span>
+            </div>
+          </div>
+          <div class="landing__socialContainer">
+            <img
+              src="./Assets/Icons/github.png"
+              alt="Icono de Github"
+              class="landing__socialIMG"
+            />
+            <div>
+              <span class="shadow"></span>
+              <span class="frontShadow hover--innerShadow">GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="contact__mapContainer">
+            <iframe
+              class="contact__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113355.06544861024!2d-55.99455653417701!3d-27.396139495246434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be7f080496c3%3A0xccbff374623e7b9a!2sPosadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1657547275084!5m2!1ses-419!2sar"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="contact__mapText">
+              Si estás cerca contáctame y tomemos un café
+            </p>
+          </div>
+
+          <form class="contact__form">
+            <h3 class="contact__formTitle">Envíame un mensaje</h3>
+
+            <input
+              class="contact__messageTitle"
+              type="text"
+              name="messageTitle"
+              id="messageTitle"
+              placeholder="Contactame y hablemos"
+            />
+
+            <textarea
+              class="contact__message"
+              name="message"
+              id="message"
+              placeholder="Dejame un mensaje"
+            ></textarea>
+
+            <div class="hover--rotate centerObject">
+              <span class="shadow"></span>
+              <span class="frontShadow">Enviar</span>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- * Final de la Sección de Contacto -->
     </main>
   </body>
 </html>
