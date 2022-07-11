@@ -305,6 +305,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  row-gap: 36px;
 }
 
 .algorithm__range {
