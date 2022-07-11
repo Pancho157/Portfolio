@@ -23,6 +23,11 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .centerObject {
   width: fit-content;
   margin: 0 auto;
@@ -79,10 +84,11 @@ body {
 .landing {
   width: 100%;
   padding: 5%;
+  padding-top: 10%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /* * Inicio de los botones de idioma */
@@ -98,7 +104,7 @@ body {
 }
 
 .landing__button {
-  width: 120px;
+  width: 135px;
   height: 40px;
 }
 
@@ -161,7 +167,15 @@ body {
 }
 
 .landing__contactMeShadowWidth {
-  width: 170px;
+  width: 192px;
+}
+
+.landing__linkedIn {
+  width: 159px;
+}
+
+.landing__github {
+  width: 136px;
 }
 
 .landing__socialIMG {
@@ -193,8 +207,10 @@ body {
 
 .projects__container {
   width: 100%;
+  margin-top: 3 0px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 20px;
@@ -363,15 +379,20 @@ body {
   background-color: #2ba153;
 }
 
-.algorithm__sortButtons{
-  padding: 10px 20px;
+.algorithm__buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.algorithm__sortButtons {
+  width: 240px;
   border-radius: 10px;
   cursor: pointer;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .algorithm__sortButtons:hover {
-  box-shadow: inset 200px 0 0 0 #1272e3;
+  box-shadow: inset 250px 0 0 0 #1272e3;
   color: white;
 }
 
@@ -398,6 +419,9 @@ body {
   padding: 15px;
   background-color: #d9d9d9;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .aboutMe__img {
@@ -409,11 +433,11 @@ body {
 }
 
 .aboutMe__text {
-  margin: 15px 0;
   padding: 0 18px;
 }
 
 .about__downloadShadow {
+  margin-top: 37px;
   width: 202px;
 }
 
@@ -430,11 +454,11 @@ body {
 }
 
 .about__technologiesShadow {
-  width: 232px;
+  width: 260px;
 }
 
 .about__alsoShadow {
-  width: 271px;
+  width: 302px;
 }
 
 .about__technologiesContainer {
@@ -495,12 +519,12 @@ body {
 }
 
 .contact__social {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.contact__form{
+.contact__form {
   width: 470px;
   padding-top: 20px;
   border-radius: 10px;
@@ -553,21 +577,21 @@ body {
   border: 2px solid #000000;
 }
 
-
-
-
+.contact__sendButton--width {
+  width: 140px;
+}
 
 /* Estilos de los input range */
 
-input[type=range] {
+input[type="range"] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 70%;
 }
-input[type=range]:focus {
+input[type="range"]:focus {
   outline: none;
 }
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -576,7 +600,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 36px;
@@ -587,10 +611,10 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #367ebd;
 }
-input[type=range]::-moz-range-track {
+input[type="range"]::-moz-range-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -599,7 +623,7 @@ input[type=range]::-moz-range-track {
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
-input[type=range]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 36px;
@@ -608,7 +632,7 @@ input[type=range]::-moz-range-thumb {
   background: #ffffff;
   cursor: pointer;
 }
-input[type=range]::-ms-track {
+input[type="range"]::-ms-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -617,19 +641,19 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent;
 }
-input[type=range]::-ms-fill-lower {
+input[type="range"]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
-input[type=range]::-ms-fill-upper {
+input[type="range"]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
-input[type=range]::-ms-thumb {
+input[type="range"]::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 36px;
@@ -638,9 +662,9 @@ input[type=range]::-ms-thumb {
   background: #ffffff;
   cursor: pointer;
 }
-input[type=range]:focus::-ms-fill-lower {
+input[type="range"]:focus::-ms-fill-lower {
   background: #3071a9;
 }
-input[type=range]:focus::-ms-fill-upper {
+input[type="range"]:focus::-ms-fill-upper {
   background: #367ebd;
 }
