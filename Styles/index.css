@@ -345,7 +345,7 @@ a {
   margin: 20px 0 12px 20px;
 }
 
-.frontShadow.active {
+.algorithm__option.active {
   box-shadow: inset 200px 0 0 0 #1272e3;
   color: white;
   cursor: pointer;
