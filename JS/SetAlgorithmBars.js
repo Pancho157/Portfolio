@@ -1,6 +1,7 @@
 const barsQuantity = document.getElementById("colsQuantity").value;
-let bars = Array.from({ length: barsQuantity }, () =>
-  Math.floor(Math.random() * 30)
+let bars = Array.from(
+  { length: barsQuantity },
+  () => Math.floor(Math.random() * 39 + 1) // Math.random() * (max - min) + min
 );
 let barsContainer = document.getElementById("algorithm__algorithmContainer");
 
