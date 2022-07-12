@@ -9,7 +9,7 @@
 body {
   min-height: 100vh;
   padding: 40px 0;
-  background-image: url("../Assets/Images/main-bg.jpg");
+  background-image: url("../Assets/Images/fondoPrincipalPortfolio.webp");
   background-position: 0px 0px;
   animation: animatedBackground 40s linear infinite alternate;
 }
