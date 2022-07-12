@@ -2,12 +2,14 @@
 var colsRange = document.getElementById("colsQuantity");
 var toDisplayColsQuantity = document.getElementById("colsValue");
 
+document.addEventListener("DOMContentLoaded", function () {
+  toDisplayColsQuantity.innerHTML = colsRange.value;
+});
+
 document.getElementById("colsQuantity").addEventListener("change", function () {
   toDisplayColsQuantity.innerHTML = colsRange.value;
 });
 
-
-// Actualiza el valor de la velocidad de la animación
 var speedRange = document.getElementById("speedRange");
 var toDisplaySpeedQuantity = document.getElementById("speedValue");
 

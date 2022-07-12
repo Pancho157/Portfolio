@@ -217,14 +217,14 @@
               <p class="algorithm__text">Cantidad de columnas:</p>
               <input
                 type="range"
-                min="10"
-                max="30"
+                min="15"
+                max="40"
                 step="1"
-                value="10"
+                value="15"
                 class="algorithm__columnsQuantity"
                 id="colsQuantity"
               />
-              <p class="algorithm__text" id="colsValue">10</p>
+              <p class="algorithm__text" id="colsValue"></p>
             </div>
 
             <div class="algorithm__range">
@@ -270,18 +270,10 @@
 
         <!-- Inicio de la visual del algoritmo -->
 
-        <section class="algorithm__algorithmContainer">
-          <div class="algorithm__bar inProgress" elementHeight="3"></div>
-          <div class="algorithm__bar inProgress" elementHeight="1"></div>
-          <div class="algorithm__bar" elementHeight="5"></div>
-          <div class="algorithm__bar" elementHeight="2"></div>
-          <div class="algorithm__bar" elementHeight="4"></div>
-          <div class="algorithm__bar" elementHeight="8"></div>
-          <div class="algorithm__bar" elementHeight="6"></div>
-          <div class="algorithm__bar sorted" elementHeight="9"></div>
-          <div class="algorithm__bar sorted" elementHeight="10"></div>
-          <div class="algorithm__bar sorted" elementHeight="10"></div>
-        </section>
+        <section
+          class="algorithm__algorithmContainer"
+          id="algorithm__algorithmContainer"
+        ></section>
 
         <div class="algorithm__buttonsContainer">
           <div class="about__downloadCV">
@@ -430,9 +422,9 @@
             </div>
 
             <div class="about__technology">
-              <div class="about__technology--hover">BEM</div>
+              <div class="about__technology--hover">Figma</div>
               <img
-                src="./Assets/Images/BEM.jpg"
+                src="./Assets/Images/FIGMA-logo.png"
                 alt="BEM-Logo"
                 class="about__technologyIMG"
               />
@@ -498,13 +490,13 @@
 
         <div class="contact">
           <div class="contact__mapContainer">
-            <iframe
+            <!-- <iframe
               class="contact__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113355.06544861024!2d-55.99455653417701!3d-27.396139495246434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be7f080496c3%3A0xccbff374623e7b9a!2sPosadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1657547275084!5m2!1ses-419!2sar"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> -->
             <p class="contact__mapText">
               Si estás cerca contáctame y tomemos un café
             </p>
@@ -541,5 +533,6 @@
 
     <script type="text/javascript" src="./JS/ChangeActiveAlgorithm.js"></script>
     <script type="text/javascript" src="./JS/ChangeRangeValues.js"></script>
+    <script type="text/javascript" src="./JS/SetAlgorithmBars.js"></script>
   </body>
 </html>
