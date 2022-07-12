@@ -404,7 +404,7 @@ a {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: flex-start;
+  align-content: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
@@ -571,8 +571,9 @@ a {
 }
 
 .contact__mapText {
-  padding: 10px 15px;
+  padding: 22px 15px;
   border-radius: 10px;
+  text-align: center;
   background-color: #d9d9d9;
   border: 2px solid #000000;
 }
