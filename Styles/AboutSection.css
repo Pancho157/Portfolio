@@ -1,0 +1,106 @@
+/* * -------------------------Inicio de la Sección del About Me---------------------------- */
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  
+  /* Inicio de la parte con información personal */
+  
+  .about__aboutMe {
+    width: 650px;
+    max-width: 90%;
+    padding: 15px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .aboutMe__img {
+    width: 230px;
+    height: 230px;
+    max-width: 100%;
+    margin: 0 30px 20px 0;
+    border-radius: 10px;
+  }
+  
+  .aboutMe__text {
+    padding: 0 18px;
+  }
+  
+  .about__downloadShadow {
+    margin-top: 37px;
+    width: 202px;
+  }
+  
+  /* Final de la parte con información personal */
+  
+  /* Inicio de la parte con las tecnologías */
+  
+  .about__technologies {
+    width: 650px;
+    max-width: 90%;
+    padding: 15px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .about__technologiesShadow {
+    width: 260px;
+  }
+  
+  .about__alsoShadow {
+    width: 302px;
+  }
+  
+  .about__technologiesContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .about__technology {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  
+  .about__technologyIMG {
+    width: 104px;
+    height: 104px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .about__technology--hover {
+    background-color: #000000;
+    width: 110px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .about__technology:hover > .about__technology--hover {
+    opacity: 1;
+  }
+  
+  /* Final de la parte con las tecnologías */
+  
+  /* * Final de la Sección del About Me */

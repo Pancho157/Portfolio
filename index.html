@@ -217,13 +217,14 @@
               <p class="algorithm__text">Cantidad de columnas:</p>
               <input
                 type="range"
-                min="10"
-                max="30"
+                min="15"
+                max="40"
                 step="1"
-                value="10"
+                value="15"
                 class="algorithm__columnsQuantity"
+                id="colsQuantity"
               />
-              <p class="algorithm__text">10</p>
+              <p class="algorithm__text" id="colsValue"></p>
             </div>
 
             <div class="algorithm__range">
@@ -233,10 +234,11 @@
                 min="1"
                 max="25"
                 step="1"
-                value="10"
+                value="1"
                 class="algorithm__columnsQuantity"
+                id="speedRange"
               />
-              <p class="algorithm__text">1 ms</p>
+              <p class="algorithm__text" id="speedValue">1 ms</p>
             </div>
           </div>
 
@@ -244,22 +246,22 @@
           <div class="algorithm__algorithmSelector">
             <div class="hover--rotate about__downloadCV">
               <span class="shadow"></span>
-              <p class="frontShadow active">Bubble Sort</p>
+              <p class="frontShadow algorithm__option active">Bubble Sort</p>
             </div>
 
             <div class="hover--rotate about__downloadCV">
               <span class="shadow"></span>
-              <p class="frontShadow">Selection Sort</p>
+              <p class="frontShadow algorithm__option">Selection Sort</p>
             </div>
 
             <div class="hover--rotate about__downloadCV">
               <span class="shadow"></span>
-              <p class="frontShadow">Insertion Sort</p>
+              <p class="frontShadow algorithm__option">Insertion Sort</p>
             </div>
 
             <div class="hover--rotate about__downloadCV">
               <span class="shadow"></span>
-              <p class="frontShadow">Quick Sort</p>
+              <p class="frontShadow algorithm__option">Quick Sort</p>
             </div>
           </div>
         </section>
@@ -268,18 +270,10 @@
 
         <!-- Inicio de la visual del algoritmo -->
 
-        <section class="algorithm__algorithmContainer">
-          <div class="algorithm__bar inProgress" elementHeight="3"></div>
-          <div class="algorithm__bar inProgress" elementHeight="1"></div>
-          <div class="algorithm__bar" elementHeight="5"></div>
-          <div class="algorithm__bar" elementHeight="2"></div>
-          <div class="algorithm__bar" elementHeight="4"></div>
-          <div class="algorithm__bar" elementHeight="8"></div>
-          <div class="algorithm__bar" elementHeight="6"></div>
-          <div class="algorithm__bar sorted" elementHeight="9"></div>
-          <div class="algorithm__bar sorted" elementHeight="10"></div>
-          <div class="algorithm__bar sorted" elementHeight="10"></div>
-        </section>
+        <section
+          class="algorithm__algorithmContainer"
+          id="algorithm__algorithmContainer"
+        ></section>
 
         <div class="algorithm__buttonsContainer">
           <div class="about__downloadCV">
@@ -428,9 +422,9 @@
             </div>
 
             <div class="about__technology">
-              <div class="about__technology--hover">BEM</div>
+              <div class="about__technology--hover">Figma</div>
               <img
-                src="./Assets/Images/BEM.jpg"
+                src="./Assets/Images/FIGMA-logo.png"
                 alt="BEM-Logo"
                 class="about__technologyIMG"
               />
@@ -536,5 +530,9 @@
 
       <!-- * Final de la Sección de Contacto -->
     </main>
+
+    <script type="text/javascript" src="./JS/ChangeActiveAlgorithm.js"></script>
+    <script type="text/javascript" src="./JS/ChangeRangeValues.js"></script>
+    <script type="text/javascript" src="./JS/SetAlgorithmBars.js"></script>
   </body>
 </html>

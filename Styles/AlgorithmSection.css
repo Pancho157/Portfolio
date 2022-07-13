@@ -1,0 +1,103 @@
+/* * -------------------------Inicio de la Sección del Algoritmo---------------------------- */
+
+.algorithm {
+    width: 100%;
+    min-height: 100vh;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .algorithm__controllerContainer {
+    width: 1250px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+  
+  .algorithm__rangesContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 36px;
+  }
+  
+  .algorithm__range {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  
+  .algorithm__algorithmSelector {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  
+  .algorithmSelector__text {
+    margin: 20px 0 12px 20px;
+  }
+  
+  .algorithm__option.active {
+    box-shadow: inset 200px 0 0 0 #1272e3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .algorithm__algorithmContainer {
+    width: 1250px;
+    max-width: 90vw;
+    height: 500px;
+    padding: 20px 40px;
+    background-color: #3c3838;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    column-gap: 5px;
+  }
+  
+  .algorithm__bar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+  }
+  
+  .algorithm__bar.inProgress {
+    background-color: #eaebb2;
+  }
+  
+  .algorithm__bar.sorted {
+    background-color: #2ba153;
+  }
+  
+  .algorithm__buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .algorithm__sortButtons {
+    width: 240px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .algorithm__sortButtons:hover {
+    box-shadow: inset 250px 0 0 0 #1272e3;
+    color: white;
+  }
+  
+  /* * Final de la Sección del Algoritmo */

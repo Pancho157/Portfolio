@@ -1,0 +1,103 @@
+/* * -------------------------Estilos de la Sección de Proyectos---------------------------- */
+
+.projects {
+  width: 100%;
+  padding: 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projects__container {
+  width: 1250px;
+  max-width: 100%;
+  margin-top: 3 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+/* Inicio de los proyectos de la Sección de Proyectos */
+
+.projects__project {
+  width: 550px;
+  padding: 20px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.projects__project > img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projects__projectRight {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.projects__projectTitle {
+  text-align: center;
+}
+
+.projects__centerText {
+  text-align: center;
+}
+
+.projects__projectRedirections {
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__projectLink {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.projectLink__left {
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projectLink__left:hover {
+  box-shadow: inset 120px 0 0 0 #1272e3;
+  color: white;
+}
+
+.projectLink__right {
+  padding: 5px 26px;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projectLink__right:hover {
+  box-shadow: inset 120px 0 0 0 #1272e3;
+  color: white;
+}
+
+/* * Final de los proyectos de la Sección de Proyectos */
