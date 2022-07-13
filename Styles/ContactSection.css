@@ -23,6 +23,7 @@
   border-radius: 10px;
   background-color: #d9d9d9;
   border: 2px solid #000000;
+  box-shadow: 5px 5px 3px #5c6bc0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,6 +69,7 @@
   border-radius: 10px;
   background-color: #d9d9d9;
   border: 2px solid #000000;
+  box-shadow: 5px 5px 3px #5c6bc0;
 }
 
 .contact__sendButton--width {

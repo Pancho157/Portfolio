@@ -1,7 +1,7 @@
 const barsQuantity = document.getElementById("colsQuantity").value;
 let bars = Array.from(
   { length: barsQuantity },
-  () => Math.floor(Math.random() * 39 + 1) // Math.random() * (max - min) + min
+  () => Math.floor(Math.random() * 29 + 1) // Math.random() * (max - min) + min
 );
 let barsContainer = document.getElementById("algorithm__algorithmContainer");
 
@@ -18,7 +18,7 @@ document.getElementById("colsQuantity").addEventListener("change", function () {
   let barsQuantity = document.getElementById("colsQuantity").value;
   bars = Array.from(
     { length: barsQuantity },
-    () => Math.floor(Math.random() * 39 + 1) // Math.random() * (max - min) + min
+    () => Math.floor(Math.random() * 29 + 1) // Math.random() * (max - min) + min
   );
   barsContainer.innerHTML = "";
   bars.forEach((bar) => {
