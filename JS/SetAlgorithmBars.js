@@ -1,8 +1,9 @@
 const barsQuantity = document.getElementById("colsQuantity").value;
-let bars = Array.from(
+var bars = Array.from(
   { length: barsQuantity },
   () => Math.floor(Math.random() * 29 + 1) // Math.random() * (max - min) + min
 );
+
 let barsContainer = document.getElementById("algorithm__algorithmContainer");
 
 // Coloca las barras iniciales en el algoritmo
