@@ -13,7 +13,7 @@
 /* * Inicio de los botones de idioma */
 
 .landing__languageButtonsContainer {
-  width: 250px;
+  width: 300px;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -28,7 +28,7 @@
 }
 
 .landing__button:hover {
-  box-shadow: inset 120px 0 0 0 #1272e3;
+  box-shadow: inset 150px 0 0 0 #1272e3;
   color: white;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .buttonShadow {
-  width: 120px;
+  width: 148px;
   height: 40px;
 }
 
