@@ -49,6 +49,10 @@
   margin: 20px 0 12px 20px;
 }
 
+.algorithm__option {
+  padding: 15px 30px !important;
+}
+
 .algorithm__option.active {
   box-shadow: inset 200px 0 0 0 #1272e3;
   color: white;
