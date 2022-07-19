@@ -102,7 +102,7 @@
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.algorithm__sortButtons:hover {
+.algorithm__sortButtons:hover:enabled {
   box-shadow: inset 250px 0 0 0 #1272e3;
   color: white;
 }

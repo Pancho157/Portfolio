@@ -27,3 +27,10 @@ document.getElementById("colsQuantity").addEventListener("change", function () {
       "<div class='algorithm__bar' style='height: " + bar * 10 + "px'></div>";
   });
 });
+
+// Hace el cambio entre barras cuando lo llama algún algoritmo
+function swap(el1, el2) {
+  let temp = el1.style.height;
+  el1.style.height = el2.style.height;
+  el2.style.height = temp;
+}

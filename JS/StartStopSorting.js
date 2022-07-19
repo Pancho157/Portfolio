@@ -1,3 +1,24 @@
+let hasPressedStart = Boolean(false);
+let hasPressedStop = Boolean(false);
+let hasPressedStartSorting = new Boolean(false);
+var delay = document.getElementById("speedRange");
+disabledButtons(false);
+
+const sortButton = document
+  .getElementById("sortButton")
+  .addEventListener("click", function () {
+    hasPressedStart = true;
+    hasPressedStop = false;
+    disabledButtons(true);
+  });
+
+const stopSortingButton = document
+  .getElementById("stopSortingButton")
+  .addEventListener("click", function () {
+    hasPressedStop = true;
+    disabledButtons(false);
+  });
+
 // Llamar a la función desde otro archivo (exportando y dandole el array y el tiempo de duración)
 // Que la función se encargue de cambiar el orden de las columnas y renderizarlo
 // Que la función tenga el metodo para romper el proceso

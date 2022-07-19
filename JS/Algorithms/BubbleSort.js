@@ -1,18 +1,22 @@
-function bubble(arr) {
-  var len = arr.length;
+async function bubbleSort() {
+  const bars = document.querySelectorAll(".algorithm__bar");
 
-  for (var i = 0; i < len; i++) {
-    for (var j = 0; j < len - i - 1; j++) {
-      // this was missing
-      if (arr[j] > arr[j + 1]) {
-        // swap
-        var temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
+  for (let i = 0; i < bars.length - 1; i++) {
+    for (let j = 0; j < bars.length - i - 1; j++) {
+      if (hasPressedStop) return;
+
+      bars[j].getElementsByClassName.background = "#EAEBB2";
+      bars[j + 1].getElementsByClassName.background = "#EAEBB2";
+
+      if (bars[j].style.height > bars[j + 1].style.height) {
+        await delayTime(delay.value);
+        swap(ele[j], ele[j + 1]);
       }
+      bars[j].style.background = "#ffffff";
+      bars[j + 1].style.background = "#ffffff";
     }
+    bars[bars.length - 1 - i].style.background = "#2BA153";
   }
-  return arr;
+  // bars[0].style.background = "#2BA153";
 }
 
-document.write(bubble([1, 9, 2, 3, 7, 6, 4, 5, 5]));
