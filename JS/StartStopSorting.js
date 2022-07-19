@@ -1,7 +1,7 @@
 let hasPressedStart = Boolean(false);
 let hasPressedStop = Boolean(false);
 let hasPressedStartSorting = new Boolean(false);
-var delay
+var delay;
 disabledButtons(false);
 
 const sortButton = document
@@ -10,7 +10,7 @@ const sortButton = document
     hasPressedStart = true;
     hasPressedStop = false;
     disabledButtons(true);
-    await bubbleSort()
+    await selectionSort();
     disabledButtons(false);
   });
 
