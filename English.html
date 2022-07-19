@@ -567,15 +567,15 @@
 
           <form
             class="contact__form"
-            onsubmit="sendMessage(); reset(); return false;"
+            action="https://formsubmit.co/mf.franciscomuniz@gmail.com"
+            method="POST"
           >
             <h3 class="contact__formTitle">Send me a Message</h3>
 
             <input
               class="contact__messageTitle"
               type="email"
-              name="Email"
-              id="email"
+              name="email"
               placeholder="Your email"
               required
             />
@@ -611,10 +611,6 @@
 
       <!-- * Final de la Sección de Contacto -->
     </main>
-
-    <!-- Lógica de email -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./JS/SendEmail.js"></script>
 
     <!-- Inicio de lógica de los Sorting Algorithms -->
     <script

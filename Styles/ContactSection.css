@@ -75,4 +75,5 @@
 
 .contact__sendButton--width {
   width: 140px;
+  cursor: pointer;
 }

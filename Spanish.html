@@ -570,14 +570,23 @@
             </p>
           </div>
 
-          <form class="contact__form" onsubmit="sendMessage()">
+          <form
+            class="contact__form"
+            action="https://formsubmit.co/el/fejapa"
+            method="POST"
+          >
             <h3 class="contact__formTitle">Envíame un mensaje</h3>
 
             <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
+            
+            <input
               class="contact__messageTitle"
               type="email"
-              name="Email"
-              id="email"
+              name="email"
               placeholder="Ingresa tu email"
               required
             />
@@ -601,7 +610,7 @@
             <div class="hover--rotate centerObject">
               <span class="shadow contact__sendButton--width"></span>
               <button
-                type="button"
+                type="submit"
                 class="frontShadow contact__sendButton--width"
               >
                 Enviar
@@ -613,10 +622,6 @@
 
       <!-- * Final de la Sección de Contacto -->
     </main>
-
-    <!-- Lógica de email -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./JS/SendEmail.js"></script>
 
     <!-- Inicio de lógica de los Sorting Algorithms -->
     <script
