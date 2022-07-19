@@ -29,8 +29,17 @@ document.getElementById("colsQuantity").addEventListener("change", function () {
 });
 
 // Hace el cambio entre barras cuando lo llama algún algoritmo
-function swap(el1, el2) {
-  let temp = el1.style.height;
-  el1.style.height = el2.style.height;
-  el2.style.height = temp;
+function swap(bar1, bar2) {
+  let temp = bar1.style.height;
+  bar1.style.height = bar2.style.height;
+  bar2.style.height = temp;
+}
+
+// Establece el tiempo que tardan las animaciónes cuando lo llama algun algoritmo de Sort
+function delayTime(milisec) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("");
+    }, milisec);
+  });
 }

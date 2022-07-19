@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   toDisplayColsQuantity.innerHTML = colsRange.value;
 
   toDisplaySpeedQuantity.innerHTML = speedRange.value + " ms";
+  delay = speedRange.value;
 });
 
 // Actualiza los valores de los cuando se cambia su valor
@@ -19,4 +20,5 @@ document.getElementById("colsQuantity").addEventListener("change", function () {
 
 document.getElementById("speedRange").addEventListener("change", function () {
   toDisplaySpeedQuantity.innerHTML = speedRange.value + " ms";
+  delay = speedRange.value;
 });

@@ -1,15 +1,17 @@
 let hasPressedStart = Boolean(false);
 let hasPressedStop = Boolean(false);
 let hasPressedStartSorting = new Boolean(false);
-var delay = document.getElementById("speedRange");
+var delay
 disabledButtons(false);
 
 const sortButton = document
   .getElementById("sortButton")
-  .addEventListener("click", function () {
+  .addEventListener("click", async function () {
     hasPressedStart = true;
     hasPressedStop = false;
     disabledButtons(true);
+    await bubbleSort()
+    disabledButtons(false);
   });
 
 const stopSortingButton = document
@@ -18,10 +20,3 @@ const stopSortingButton = document
     hasPressedStop = true;
     disabledButtons(false);
   });
-
-// Llamar a la función desde otro archivo (exportando y dandole el array y el tiempo de duración)
-// Que la función se encargue de cambiar el orden de las columnas y renderizarlo
-// Que la función tenga el metodo para romper el proceso
-// Que agarre el array mapeando las barras
-// Que tenga un setTimeOut para realizar los cambios de estilos y que su duración dependa del parametro dado en un inicio
-// Que se desabiliten los controles cuando se esta desarrollando el algoritmo
