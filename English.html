@@ -1,664 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./Styles/index.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./Assets/Icons/coding.png" />
-    <title>Francisco Muñiz</title>
-  </head>
 
-  <body>
-    <main class="main">
-      <!-- * Inicio de la sección del Landing -->
-      <section class="landing">
-        <div class="landing__languageButtonsContainer">
-          <div class="landing__languageButton">
-            <span class="buttonShadow shadow"></span>
-            <a class="landing__button frontShadow" href="Spanish.html"
-              >Español</a
-            >
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="./Styles/index.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Assets/Icons/coding.png" />
+  <title>Francisco Muñiz</title>
+</head>
 
-          <div class="landing__languageButton">
-            <span class="buttonShadow shadow"></span>
-            <a class="landing__button frontShadow active" href="#">English</a>
-          </div>
+<body>
+  <main class="main">
+    <!-- * Inicio de la sección del Landing -->
+    <section class="landing">
+      <div class="landing__languageButtonsContainer">
+        <div class="landing__languageButton">
+          <span class="buttonShadow shadow"></span>
+          <a class="landing__button frontShadow" href="Spanish.html">Español</a>
         </div>
 
-        <div class="landing__mainTextContainer">
-          <div class="landing__mainTextLineContainer">
-            <h1 class="landing__title">Hi, I'm</h1>
-            <div class="hover--rotate">
-              <span class="nameShadowWidth shadow"></span>
-              <a href="#aboutMe" class="frontShadow nameShadowWidth"
-                >Francisco Muñiz</a
-              >
-            </div>
+        <div class="landing__languageButton">
+          <span class="buttonShadow shadow"></span>
+          <a class="landing__button frontShadow active" href="#">English</a>
+        </div>
+      </div>
+
+      <div class="landing__mainTextContainer">
+        <div class="landing__mainTextLineContainer">
+          <h1 class="landing__title">Hi, I'm</h1>
+          <div class="hover--rotate">
+            <span class="nameShadowWidth shadow"></span>
+            <a href="#aboutMe" class="frontShadow nameShadowWidth">Francisco Muñiz</a>
           </div>
-          <div class="landing__mainTextLineContainer">
-            <h2 class="landing__title">Actually, I perform as a</h2>
-            <div class="hover--rotate">
-              <span class="roleShadowWidth shadow"></span>
-              <a
-                href="https://www.freelancermap.com/blog/es/diferencias-programador-junior-y-senior/#:~:text=Un%20programador%20de%20nivel%20junior,catalogado%20como%20un%20programador%20senior."
-                target="_blank"
-                class="frontShadow roleShadowWidth"
-                >Junior Web Developer</a
-              >
-            </div>
+        </div>
+        <div class="landing__mainTextLineContainer">
+          <h2 class="landing__title">Actually, I perform as a</h2>
+          <div class="hover--rotate">
+            <span class="roleShadowWidth shadow"></span>
+            <a href="https://www.freelancermap.com/blog/es/diferencias-programador-junior-y-senior/#:~:text=Un%20programador%20de%20nivel%20junior,catalogado%20como%20un%20programador%20senior."
+              target="_blank" class="frontShadow roleShadowWidth">Junior Web Developer</a>
           </div>
-          <p class="landing__text">
-            I am an enthusiast of Web Technologies and I always keep learning
-            new things
-          </p>
+        </div>
+        <p class="landing__text">
+          I am an enthusiast of Web Technologies and I always keep learning
+          new things
+        </p>
+      </div>
+
+      <div class="landing__socialContainer">
+        <div class="hover--rotate">
+          <span class="shadow landing__contactMeShadowWidth"></span>
+          <a href="#contact" class="frontShadow">Contact me!</a>
         </div>
 
         <div class="landing__socialContainer">
-          <div class="hover--rotate">
-            <span class="shadow landing__contactMeShadowWidth"></span>
-            <a href="#contact" class="frontShadow">Contact me!</a>
-          </div>
-
-          <div class="landing__socialContainer">
-            <img
-              src="./Assets/Icons/linkedin.png"
-              alt="Icono de Github"
-              class="landing__socialIMG"
-            />
-            <div>
-              <span class="shadow landing__linkedIn"></span>
-              <a
-                href="https://www.linkedin.com/in/francisco-muñiz-011010232/"
-                target="_blank"
-                class="frontShadow hover--innerShadow"
-                >LinkedIn</a
-              >
-            </div>
-          </div>
-
-          <div class="landing__socialContainer">
-            <img
-              src="./Assets/Icons/github.png"
-              alt="Icono de Github"
-              class="landing__socialIMG"
-            />
-            <div>
-              <span class="shadow landing__github"></span>
-              <a
-                href="https://github.com/Pancho157"
-                target="_blank"
-                class="frontShadow hover--innerShadow"
-                >GitHub</a
-              >
-            </div>
+          <img src="./Assets/Icons/linkedin.png" alt="Icono de Github" class="landing__socialIMG" />
+          <div>
+            <span class="shadow landing__linkedIn"></span>
+            <a href="https://www.linkedin.com/in/francisco-muñiz-011010232/" target="_blank"
+              class="frontShadow hover--innerShadow">LinkedIn</a>
           </div>
         </div>
-      </section>
 
-      <!-- * Final de la Sección del Landing -->
-      <!-- * Inicio de la Sección de Proyectos -->
-
-      <section class="projects" id="projects">
-        <span class="mainTitle titleShadow--noBreak"></span>
-        <h2 class="mainTitle frontShadow">Proyects</h2>
-
-        <section class="projects__container">
-          <article class="projects__project">
-            <img
-              src="./Assets/Images/Ecommerce.png"
-              alt="Imagen del proyecto"
-            />
-            <div class="projects__projectRight">
-              <h3 class="projects__projectTitle">E-commerce</h3>
-              <p class="projects__projectText projects__centerText">
-                This project uses:
-              </p>
-              <p class="projects__projectText projects__centerText">
-                React Native
-              </p>
-              <p class="projects__projectText">
-                It's a web application in which I applied the knowledge
-                purchased in React, making an E-commerce page and connecting it
-                to firebase
-              </p>
-              <div class="projects__projectRedirections">
-                <a href="#" class="projectLink__left projects__projectLink"
-                  >Web Page</a
-                >
-                <a href="#" class="projectLink__right projects__projectLink"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__project">
-            <img
-              src="./Assets/Images/App de juegos.png"
-              alt="Imagen del proyecto"
-            />
-            <div class="projects__projectRight">
-              <h3 class="projects__projectTitle">Games App</h3>
-              <p class="projects__projectText projects__centerText">
-                This project uses:
-              </p>
-              <p class="projects__projectText projects__centerText">
-                HTML - CSS - JavaScript
-              </p>
-              <p class="projects__projectText">
-                It's an educational application in order to teach childrens
-                about a topic of selection entertaining them with visual
-                challenges
-              </p>
-              <div class="projects__projectRedirections">
-                <a href="#" class="projectLink__left projects__projectLink"
-                  >Web Page</a
-                >
-                <a href="#" class="projectLink__right projects__projectLink"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__project">
-            <img
-              src="./Assets/Images/Simbiontes.png"
-              alt="Imagen del proyecto"
-            />
-            <div class="projects__projectRight">
-              <h3 class="projects__projectTitle">Simbiontes</h3>
-              <p class="projects__projectText projects__centerText">
-                This project uses:
-              </p>
-              <p class="projects__projectText projects__centerText">
-                React Native
-              </p>
-              <p class="projects__projectText">
-                It's a web page for a fungui community, which wants to expand
-                their community and reach more people
-              </p>
-              <div class="projects__projectRedirections">
-                <a href="#" class="projectLink__left projects__projectLink"
-                  >Web Page</a
-                >
-                <a href="#" class="projectLink__right projects__projectLink"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__project">
-            <img
-              src="./Assets/Images/Página estática.png"
-              alt="Imagen del proyecto"
-            />
-            <div class="projects__projectRight">
-              <h3 class="projects__projectTitle">Página Estática</h3>
-              <p class="projects__projectText projects__centerText">
-                This project uses:
-              </p>
-              <p class="projects__projectText projects__centerText">
-                HTML - CSS
-              </p>
-              <p class="projects__projectText">
-                It's a web page that has the objective of demonstrating the
-                knowledge acquired in the CoderHouse HTML and CSS course
-              </p>
-              <div class="projects__projectRedirections">
-                <a href="#" class="projectLink__left projects__projectLink"
-                  >Web Page</a
-                >
-                <a href="#" class="projectLink__right projects__projectLink"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </article>
-        </section>
-      </section>
-
-      <!-- * Final de la Sección de Proyectos -->
-
-      <!-- * Inicio de la Sección del Algoritmo de Clasificación -->
-
-      <section class="algorithm" id="algorithm">
-        <div class="mainTitleContainer">
-          <span class="mainTitle algorithm__titleShadow--height"></span>
-          <h2 class="mainTitle frontShadow">Sorting Algorithms</h2>
+        <div class="landing__socialContainer">
+          <img src="./Assets/Icons/github.png" alt="Icono de Github" class="landing__socialIMG" />
+          <div>
+            <span class="shadow landing__github"></span>
+            <a href="https://github.com/Pancho157" target="_blank" class="frontShadow hover--innerShadow">GitHub</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Inicio de los controles del algoritmo -->
+    <!-- * Final de la Sección del Landing -->
+    <!-- * Inicio de la Sección de Proyectos -->
 
-        <section class="algorithm__controllerContainer">
-          <div class="algorithm__rangesContainer">
-            <div class="algorithm__range">
-              <p class="algorithm__text">Number of Columns:</p>
-              <input
-                type="range"
-                min="15"
-                max="40"
-                step="1"
-                value="15"
-                class="algorithm__columnsQuantity"
-                id="colsQuantity"
-              />
-              <p class="algorithm__text" id="colsValue"></p>
-            </div>
+    <section class="projects" id="projects">
+      <span class="mainTitle titleShadow--noBreak"></span>
+      <h2 class="mainTitle frontShadow">Proyects</h2>
 
-            <div class="algorithm__range">
-              <p class="algorithm__text">Animation Speed:</p>
-              <input
-                type="range"
-                min="1"
-                max="200"
-                step="1"
-                value="1"
-                class="algorithm__columnsQuantity"
-                id="speedRange"
-              />
-              <p class="algorithm__text" id="speedValue"></p>
+      <section class="projects__container">
+        <article class="projects__project">
+          <img src="./Assets/Images/Ecommerce.png" alt="Imagen del proyecto" />
+          <div class="projects__projectRight">
+            <h3 class="projects__projectTitle">E-commerce</h3>
+            <p class="projects__projectText projects__centerText">
+              This project uses:
+            </p>
+            <p class="projects__projectText projects__centerText">
+              React Native
+            </p>
+            <p class="projects__projectText">
+              It's a web application in which I applied the knowledge
+              purchased in React, making an E-commerce page and connecting it
+              to firebase
+            </p>
+            <div class="projects__projectRedirections">
+              <a href="#" class="projectLink__left projects__projectLink">Web Page</a>
+              <a href="#" class="projectLink__right projects__projectLink">GitHub</a>
             </div>
           </div>
+        </article>
 
-          <p class="algorithmSelector__text">Algorithm:</p>
-          <div class="algorithm__algorithmSelector">
-            <div class="hover--rotate about__downloadCV">
-              <span class="shadow--tall"></span>
-              <button
-                type="button"
-                id="bubbleSort"
-                class="frontShadow algorithm__option active"
-              >
-                Bubble Sort
-              </button>
+        <article class="projects__project">
+          <img src="./Assets/Images/App de juegos.png" alt="Imagen del proyecto" />
+          <div class="projects__projectRight">
+            <h3 class="projects__projectTitle">Games App</h3>
+            <p class="projects__projectText projects__centerText">
+              This project uses:
+            </p>
+            <p class="projects__projectText projects__centerText">
+              HTML - CSS - JavaScript
+            </p>
+            <p class="projects__projectText">
+              It's an educational application in order to teach childrens
+              about a topic of selection entertaining them with visual
+              challenges
+            </p>
+            <div class="projects__projectRedirections">
+              <a href="#" class="projectLink__left projects__projectLink">Web Page</a>
+              <a href="#" class="projectLink__right projects__projectLink">GitHub</a>
             </div>
+          </div>
+        </article>
 
-            <div class="hover--rotate about__downloadCV">
-              <span class="shadow--tall"></span>
-              <button
-                type="button"
-                id="selectionSort"
-                class="frontShadow algorithm__option"
-              >
-                Selection Sort
-              </button>
+        <article class="projects__project">
+          <img src="./Assets/Images/Simbiontes.png" alt="Imagen del proyecto" />
+          <div class="projects__projectRight">
+            <h3 class="projects__projectTitle">Simbiontes</h3>
+            <p class="projects__projectText projects__centerText">
+              This project uses:
+            </p>
+            <p class="projects__projectText projects__centerText">
+              React Native
+            </p>
+            <p class="projects__projectText">
+              It's a web page for a fungui community, which wants to expand
+              their community and reach more people
+            </p>
+            <div class="projects__projectRedirections">
+              <a href="#" class="projectLink__left projects__projectLink">Web Page</a>
+              <a href="#" class="projectLink__right projects__projectLink">GitHub</a>
             </div>
+          </div>
+        </article>
 
-            <div class="hover--rotate about__downloadCV">
-              <span class="shadow--tall"></span>
-              <button
-                type="button"
-                id="insertionSort"
-                class="frontShadow algorithm__option"
-              >
-                Insertion Sort
-              </button>
+        <article class="projects__project">
+          <img src="./Assets/Images/Página estática.png" alt="Imagen del proyecto" />
+          <div class="projects__projectRight">
+            <h3 class="projects__projectTitle">Página Estática</h3>
+            <p class="projects__projectText projects__centerText">
+              This project uses:
+            </p>
+            <p class="projects__projectText projects__centerText">
+              HTML - CSS
+            </p>
+            <p class="projects__projectText">
+              It's a web page that has the objective of demonstrating the
+              knowledge acquired in the CoderHouse HTML and CSS course
+            </p>
+            <div class="projects__projectRedirections">
+              <a href="#" class="projectLink__left projects__projectLink">Web Page</a>
+              <a href="#" class="projectLink__right projects__projectLink">GitHub</a>
             </div>
+          </div>
+        </article>
+      </section>
+    </section>
 
-            <!-- <div class="hover--rotate about__downloadCV">
+    <!-- * Final de la Sección de Proyectos -->
+
+    <!-- * Inicio de la Sección del Algoritmo de Clasificación -->
+
+    <section class="algorithm" id="algorithm">
+      <div class="mainTitleContainer">
+        <span class="mainTitle algorithm__titleShadow--height"></span>
+        <h2 class="mainTitle frontShadow">Sorting Algorithms</h2>
+      </div>
+
+      <!-- Inicio de los controles del algoritmo -->
+
+      <section class="algorithm__controllerContainer">
+        <div class="algorithm__rangesContainer">
+          <div class="algorithm__range">
+            <p class="algorithm__text">Number of Columns:</p>
+            <input type="range" min="15" max="40" step="1" value="15" class="algorithm__columnsQuantity"
+              id="colsQuantity" />
+            <p class="algorithm__text" id="colsValue"></p>
+          </div>
+
+          <div class="algorithm__range">
+            <p class="algorithm__text">Animation Speed:</p>
+            <input type="range" min="1" max="200" step="1" value="1" class="algorithm__columnsQuantity"
+              id="speedRange" />
+            <p class="algorithm__text" id="speedValue"></p>
+          </div>
+        </div>
+
+        <p class="algorithmSelector__text">Algorithm:</p>
+        <div class="algorithm__algorithmSelector">
+          <div class="hover--rotate about__downloadCV">
+            <span class="shadow--tall"></span>
+            <button type="button" id="bubbleSort" class="frontShadow algorithm__option active">
+              Bubble Sort
+            </button>
+          </div>
+
+          <div class="hover--rotate about__downloadCV">
+            <span class="shadow--tall"></span>
+            <button type="button" id="selectionSort" class="frontShadow algorithm__option">
+              Selection Sort
+            </button>
+          </div>
+
+          <div class="hover--rotate about__downloadCV">
+            <span class="shadow--tall"></span>
+            <button type="button" id="insertionSort" class="frontShadow algorithm__option">
+              Insertion Sort
+            </button>
+          </div>
+
+          <!-- <div class="hover--rotate about__downloadCV">
             <span class="shadow--tall"></span>
             <button type="button" id="quickSort" class="frontShadow algorithm__option">
               Quick Sort
             </button>
           </div> -->
+        </div>
+      </section>
+
+      <!-- Final de los controles del algoritmo -->
+
+      <!-- Inicio de la visual del algoritmo -->
+
+      <section class="algorithm__algorithmContainer" id="algorithm__algorithmContainer"></section>
+
+      <div class="algorithm__buttonsContainer">
+        <div class="about__downloadCV">
+          <span class="shadow"></span>
+          <p class="frontShadow algorithm__sortButtons" id="sortButton">
+            Sort
+          </p>
+        </div>
+
+        <div class="about__downloadCV">
+          <span class="shadow"></span>
+          <p class="frontShadow algorithm__sortButtons" id="stopSortingButton">
+            Stop Algorithm
+          </p>
+        </div>
+      </div>
+
+      <!-- Final de la visual del algoritmo -->
+    </section>
+
+    <!-- * Final de la Sección del Algoritmo de Clasificación -->
+
+    <!-- * Inicio de la Sección del About Me -->
+
+    <section class="about" id="aboutMe">
+      <div class="mainTitleContainer">
+        <span class="mainTitle titleShadow--noBreak"></span>
+        <h2 class="mainTitle frontShadow">About Me</h2>
+      </div>
+
+      <!-- Inicio de la Información personal -->
+
+      <section class="about__aboutMe about__aboutMe--english">
+        <p class="aboutMe__text">
+          <img src="./Assets/Images/myself.png" alt="Foto del programador del portfolio" class="aboutMe__img"
+            align="left" />
+          I'm a young person with pasion for programming and I always try to
+          maintain myself evolving my habilities as a developer and learning
+          new things
+          <br />
+          <br />
+          I am a proactive Junior FrontEnd Developer (on the way to Full
+          Stack) and avid for the resolution of technical problems related to
+          the software
+        </p>
+        <br />
+        <p class="aboutMe__text">
+          I have experience working in a team and I define myself as a builder
+          of interpersonal relationships based on trust
+        </p>
+        <br />
+        <p class="aboutMe__text">
+          I'm currently in the city of Posadas - Misiones
+        </p>
+
+        <div clear="all"></div>
+
+        <div class="hover--rotate centerObject">
+          <span class="shadow about__downloadShadow"></span>
+          <a href="./Assets/Images/Curriculum (english).pdf" download="Curriculum - Francisco Muñiz"
+            class="frontShadow">Download my CV</a>
+        </div>
+      </section>
+
+      <!-- Final de la Información personal -->
+
+      <!-- Inicio Tecnologías Utilizadas -->
+
+      <section class="about__technologies">
+        <div class="centerObject">
+          <span class="shadow about__technologiesShadow"></span>
+          <p class="frontShadow about__technologiesShadow">
+            I've worked with:
+          </p>
+        </div>
+
+        <section class="about__technologiesContainer">
+          <div class="about__technology">
+            <div class="about__technology--hover">HTML</div>
+            <img src="./Assets/Images/HTML-logo.png" alt="HTML-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">CSS</div>
+            <img src="./Assets/Images/CSS-logo.png" alt="CSS-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">SASS</div>
+            <img src="./Assets/Images/SASS-logo.png" alt="SASS-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">JavaScript</div>
+            <img src="./Assets/Images/JS-logo.png" alt="JavaScript-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">React</div>
+            <img src="./Assets/Images/REACT-logo.png" alt="React-Logo" class="about__technologyIMG" />
           </div>
         </section>
 
-        <!-- Final de los controles del algoritmo -->
-
-        <!-- Inicio de la visual del algoritmo -->
-
-        <section
-          class="algorithm__algorithmContainer"
-          id="algorithm__algorithmContainer"
-        ></section>
-
-        <div class="algorithm__buttonsContainer">
-          <div class="about__downloadCV">
-            <span class="shadow"></span>
-            <p class="frontShadow algorithm__sortButtons" id="sortButton">
-              Sort
-            </p>
-          </div>
-
-          <div class="about__downloadCV">
-            <span class="shadow"></span>
-            <p
-              class="frontShadow algorithm__sortButtons"
-              id="stopSortingButton"
-            >
-              Stop Algorithm
-            </p>
-          </div>
+        <div class="centerObject">
+          <span class="shadow about__alsoShadow"></span>
+          <p class="frontShadow about__alsoShadow">I also utilised:</p>
         </div>
 
-        <!-- Final de la visual del algoritmo -->
+        <section class="about__technologiesContainer">
+          <div class="about__technology">
+            <div class="about__technology--hover">Git</div>
+            <img src="./Assets/Images/GIT-logo.png" alt="Git-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">GitHub</div>
+            <img src="./Assets/Images/GITHUB-logo.png" alt="GitHub-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">Figma</div>
+            <img src="./Assets/Images/FIGMA-logo.png" alt="Figma-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">Firebase</div>
+            <img src="./Assets/Images/FIREBASE-logo.png" alt="Firebase-Logo" class="about__technologyIMG" />
+          </div>
+
+          <div class="about__technology">
+            <div class="about__technology--hover">BEM</div>
+            <img src="./Assets/Images/BEM-logo.png" alt="SpotifyAPI-Logo" class="about__technologyIMG" />
+          </div>
+        </section>
       </section>
 
-      <!-- * Final de la Sección del Algoritmo de Clasificación -->
+      <!-- Final Tecnologías Utilizadas -->
+    </section>
 
-      <!-- * Inicio de la Sección del About Me -->
+    <!-- * Final de la Sección del About Me -->
 
-      <section class="about" id="aboutMe">
-        <div class="mainTitleContainer">
-          <span class="mainTitle titleShadow--noBreak"></span>
-          <h2 class="mainTitle frontShadow">About Me</h2>
+    <!-- * Inicio de la Sección de Contacto -->
+
+    <section id="contact">
+      <div class="mainTitleContainer">
+        <span class="mainTitle titleShadow--noBreak"></span>
+        <h2 class="mainTitle frontShadow">Contact Me!</h2>
+      </div>
+
+      <div class="contact__social">
+        <div class="landing__socialContainer">
+          <img src="./Assets/Icons/linkedin.png" alt="Icono de Github" class="landing__socialIMG" />
+          <div>
+            <span class="shadow"></span>
+            <a class="frontShadow hover--innerShadow" href="https://www.linkedin.com/in/francisco-muñiz-011010232/"
+              target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="landing__socialContainer">
+          <img src="./Assets/Icons/github.png" alt="Icono de Github" class="landing__socialIMG" />
+          <div>
+            <span class="shadow"></span>
+            <a class="frontShadow hover--innerShadow" href="https://github.com/Pancho157" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="contact__mapContainer">
+          <iframe class="contact__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113355.06544861024!2d-55.99455653417701!3d-27.396139495246434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be7f080496c3%3A0xccbff374623e7b9a!2sPosadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1657547275084!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="contact__mapText">
+            If you're around, let's have a coffee
+          </p>
         </div>
 
-        <!-- Inicio de la Información personal -->
+        <form class="contact__form" action="https://formsubmit.co/mf.franciscomuniz@gmail.com" method="POST">
+          <h3 class="contact__formTitle">Send me a Message</h3>
 
-        <section class="about__aboutMe">
-          <p class="aboutMe__text">
-            <img
-              src="./Assets/Images/myself.png"
-              alt="Foto del programador del portfolio"
-              class="aboutMe__img"
-              align="left"
-            />
-            I'm a young person with pasion for programming and I always try to
-            maintain myself evolving my habilities as a developer and learning
-            new things
-            <br />
-            <br />
-            I am a proactive Junior FrontEnd Developer (on the way to Full
-            Stack) and avid for the resolution of technical problems related to
-            the software
-          </p>
-          <br />
-          <p class="aboutMe__text">
-            I have experience working in a team and I define myself as a builder
-            of interpersonal relationships based on trust
-          </p>
-          <br />
-          <p class="aboutMe__text">
-            I'm currently in the city of Posadas - Misiones
-          </p>
+          <input class="contact__messageTitle" type="email" name="email" placeholder="Your email" required />
 
-          <div clear="all"></div>
+          <input class="contact__messageTitle" type="text" name="messageTitle" id="messageTitle"
+            placeholder="Let's chat" required />
+
+          <textarea class="contact__message" name="message" id="message" placeholder="Send me a message"></textarea>
 
           <div class="hover--rotate centerObject">
-            <span class="shadow about__downloadShadow"></span>
-            <a
-              href="./Assets/Images/Curriculum (english).pdf"
-              download="Curriculum - Francisco Muñiz"
-              class="frontShadow"
-              >Download my CV</a
-            >
+            <span class="shadow contact__sendButton--width"></span>
+            <button type="submit" class="frontShadow contact__sendButton--width">
+              Send
+            </button>
           </div>
-        </section>
+        </form>
+      </div>
+    </section>
 
-        <!-- Final de la Información personal -->
+    <!-- * Final de la Sección de Contacto -->
+  </main>
 
-        <!-- Inicio Tecnologías Utilizadas -->
+  <!-- Inicio de lógica de los Sorting Algorithms -->
+  <script type="text/javascript" src="./JS/EnableDisableButtons.js" defer></script>
+  <script type="text/javascript" src="./JS/ChangeActiveAlgorithm.js" defer></script>
+  <script type="text/javascript" src="./JS/ChangeRangeValues.js" defer></script>
+  <script type="text/javascript" src="./JS/SetAlgorithmBars.js" defer></script>
+  <script type="text/javascript" src="./JS/StartStopSorting.js" defer></script>
 
-        <section class="about__technologies">
-          <div class="centerObject">
-            <span class="shadow about__technologiesShadow"></span>
-            <p class="frontShadow about__technologiesShadow">
-              I've worked with:
-            </p>
-          </div>
+  <!-- Sorting Algorithms -->
+  <script type="text/javascript" src="./JS/Algorithms/BubbleSort.js" defer></script>
+  <script type="text/javascript" src="./JS/Algorithms/InsertionSort.js" defer></script>
+  <script type="text/javascript" src="./JS/Algorithms/QuickSort.js" defer></script>
+  <script type="text/javascript" src="./JS/Algorithms/SelectionSort.js" defer></script>
+</body>
 
-          <section class="about__technologiesContainer">
-            <div class="about__technology">
-              <div class="about__technology--hover">HTML</div>
-              <img
-                src="./Assets/Images/HTML-logo.png"
-                alt="HTML-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">CSS</div>
-              <img
-                src="./Assets/Images/CSS-logo.png"
-                alt="CSS-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">SASS</div>
-              <img
-                src="./Assets/Images/SASS-logo.png"
-                alt="SASS-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">JavaScript</div>
-              <img
-                src="./Assets/Images/JS-logo.png"
-                alt="JavaScript-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">React</div>
-              <img
-                src="./Assets/Images/REACT-logo.png"
-                alt="React-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-          </section>
-
-          <div class="centerObject">
-            <span class="shadow about__alsoShadow"></span>
-            <p class="frontShadow about__alsoShadow">I also utilised:</p>
-          </div>
-
-          <section class="about__technologiesContainer">
-            <div class="about__technology">
-              <div class="about__technology--hover">Git</div>
-              <img
-                src="./Assets/Images/GIT-logo.png"
-                alt="Git-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">GitHub</div>
-              <img
-                src="./Assets/Images/GITHUB-logo.png"
-                alt="GitHub-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">Figma</div>
-              <img
-                src="./Assets/Images/FIGMA-logo.png"
-                alt="Figma-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">Firebase</div>
-              <img
-                src="./Assets/Images/FIREBASE-logo.png"
-                alt="Firebase-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-
-            <div class="about__technology">
-              <div class="about__technology--hover">BEM</div>
-              <img
-                src="./Assets/Images/BEM-logo.png"
-                alt="SpotifyAPI-Logo"
-                class="about__technologyIMG"
-              />
-            </div>
-          </section>
-        </section>
-
-        <!-- Final Tecnologías Utilizadas -->
-      </section>
-
-      <!-- * Final de la Sección del About Me -->
-
-      <!-- * Inicio de la Sección de Contacto -->
-
-      <section id="contact">
-        <div class="mainTitleContainer">
-          <span class="mainTitle titleShadow--noBreak"></span>
-          <h2 class="mainTitle frontShadow">Contact Me!</h2>
-        </div>
-
-        <div class="contact__social">
-          <div class="landing__socialContainer">
-            <img
-              src="./Assets/Icons/linkedin.png"
-              alt="Icono de Github"
-              class="landing__socialIMG"
-            />
-            <div>
-              <span class="shadow"></span>
-              <a
-                class="frontShadow hover--innerShadow"
-                href="https://www.linkedin.com/in/francisco-muñiz-011010232/"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </div>
-          </div>
-          <div class="landing__socialContainer">
-            <img
-              src="./Assets/Icons/github.png"
-              alt="Icono de Github"
-              class="landing__socialIMG"
-            />
-            <div>
-              <span class="shadow"></span>
-              <a
-                class="frontShadow hover--innerShadow"
-                href="https://github.com/Pancho157"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="contact">
-          <div class="contact__mapContainer">
-            <iframe
-              class="contact__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113355.06544861024!2d-55.99455653417701!3d-27.396139495246434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be7f080496c3%3A0xccbff374623e7b9a!2sPosadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1657547275084!5m2!1ses-419!2sar"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <p class="contact__mapText">
-              If you're around, let's have a coffee
-            </p>
-          </div>
-
-          <form
-            class="contact__form"
-            action="https://formsubmit.co/mf.franciscomuniz@gmail.com"
-            method="POST"
-          >
-            <h3 class="contact__formTitle">Send me a Message</h3>
-
-            <input
-              class="contact__messageTitle"
-              type="email"
-              name="email"
-              placeholder="Your email"
-              required
-            />
-
-            <input
-              class="contact__messageTitle"
-              type="text"
-              name="messageTitle"
-              id="messageTitle"
-              placeholder="Let's chat"
-              required
-            />
-
-            <textarea
-              class="contact__message"
-              name="message"
-              id="message"
-              placeholder="Send me a message"
-            ></textarea>
-
-            <div class="hover--rotate centerObject">
-              <span class="shadow contact__sendButton--width"></span>
-              <button
-                type="submit"
-                class="frontShadow contact__sendButton--width"
-              >
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <!-- * Final de la Sección de Contacto -->
-    </main>
-
-    <!-- Inicio de lógica de los Sorting Algorithms -->
-    <script
-      type="text/javascript"
-      src="./JS/EnableDisableButtons.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/ChangeActiveAlgorithm.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/ChangeRangeValues.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/SetAlgorithmBars.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/StartStopSorting.js"
-      defer
-    ></script>
-
-    <!-- Sorting Algorithms -->
-    <script
-      type="text/javascript"
-      src="./JS/Algorithms/BubbleSort.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/Algorithms/InsertionSort.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/Algorithms/QuickSort.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="./JS/Algorithms/SelectionSort.js"
-      defer
-    ></script>
-  </body>
 </html>
