@@ -39,7 +39,7 @@
   background-color: #fff;
   object-fit: cover;
   object-position: center;
-  filter: brightness(125%);
+  /* filter: brightness(125%); */
   margin: 0 30px 20px 0;
   border-radius: 10px;
 }
