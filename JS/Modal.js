@@ -8,14 +8,20 @@ var secondModalOpenButton = document.getElementById("seconsProjectModal");
 var thirdModalOpenButton = document.getElementById("thirdProjectModal");
 var fourthModalOpenButton = document.getElementById("fourthProjectModal");
 
-var closeModalButton = document.getElementsByClassName("modal__closeBtn")[0];
+var closeModalButton1 = document.getElementsByClassName("modal__closeBtn")[0];
+var closeModalButton2 = document.getElementsByClassName("modal__closeBtn")[1];
+var closeModalButton3 = document.getElementsByClassName("modal__closeBtn")[2];
+var closeModalButton4 = document.getElementsByClassName("modal__closeBtn")[3];
 
 firstModalOpenButton.addEventListener("click", openFirstModal);
 secondModalOpenButton.addEventListener("click", openSecondModal);
 thirdModalOpenButton.addEventListener("click", openThirdModal);
 fourthModalOpenButton.addEventListener("click", openFourthModal);
 
-closeModalButton.addEventListener("click", closeModal);
+closeModalButton1.addEventListener("click", closeModal);
+closeModalButton2.addEventListener("click", closeModal);
+closeModalButton3.addEventListener("click", closeModal);
+closeModalButton4.addEventListener("click", closeModal);
 window.addEventListener("click", outsideClick);
 
 function closeModal() {
