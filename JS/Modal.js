@@ -16,16 +16,25 @@ thirdModalOpenButton.addEventListener("click", openThirdModal);
 fourthModalOpenButton.addEventListener("click", openFourthModal);
 
 closeModalButton.addEventListener("click", closeModal);
-firstModal.addEventListener("click", closeModal);
-secondModal.addEventListener("click", closeModal);
-thirdModal.addEventListener("click", closeModal);
-fourthModal.addEventListener("click", closeModal);
+window.addEventListener("click", outsideClick);
 
 function closeModal() {
   firstModal.style.display = "none";
   secondModal.style.display = "none";
   thirdModal.style.display = "none";
   fourthModal.style.display = "none";
+}
+
+function outsideClick(e) {
+  if (e.target == firstModal) {
+    firstModal.style.display = "none";
+  } else if (e.target == secondModal) {
+    secondModal.style.display = "none";
+  } else if (e.target == thirdModal) {
+    thirdModal.style.display = "none";
+  } else if (e.target == fourthModal) {
+    fourthModal.style.display = "none";
+  }
 }
 
 function openFirstModal() {
