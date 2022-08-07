@@ -41,7 +41,7 @@ a {
 }
 
 .frontShadow {
-  max-width: 90%;
+  max-width: 88%;
   text-align: center;
   padding: 10px 30px;
   border-radius: 10px;
@@ -55,7 +55,7 @@ a {
 
 .shadow {
   display: block;
-  max-width: 90%;
+  max-width: 88%;
   height: 45px;
   border-radius: 10px;
   background-color: #ffffff;
