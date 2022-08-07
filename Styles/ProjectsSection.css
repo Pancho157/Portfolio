@@ -61,6 +61,24 @@
   text-align: center;
 }
 
+.project__infoButton {
+  width: 200px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 8px 15px;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 3px #5c6bc0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project__infoButton:hover {
+  box-shadow: inset 200px 0 0 0 #1272e3;
+  color: white;
+}
+
 .projects__projectRedirections {
   margin: 0 auto;
   border-radius: 10px;
@@ -103,3 +121,60 @@
 }
 
 /* * Final de los proyectos de la Sección de Proyectos */
+
+/* * Inicio de los estilos de Modal */
+
+.modal {
+  display: none;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #494949bb;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.projects__modalContent {
+  width: 800px;
+  min-height: 400px;
+
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+
+  column-gap: 20px;
+  row-gap: 20px;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+.modal__closeBtn {
+  height: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.projects__modalImg {
+  flex-shrink: 2;
+  max-width: 40%;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #494949bb;
+}
+
+.projects__modalRight {
+  flex-shrink: 2;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 10px;
+}
+
+/* * Final de los estilos de Modal */

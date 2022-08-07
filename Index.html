@@ -85,17 +85,9 @@
           <img src="./Assets/Images/Ecommerce.png" alt="Imagen del proyecto" />
           <div class="projects__projectRight">
             <h3 class="projects__projectTitle">E-commerce</h3>
-            <p class="projects__projectText projects__centerText">
-              This project uses:
-            </p>
-            <p class="projects__projectText projects__centerText">
-              React Native
-            </p>
-            <p class="projects__projectText">
-              It's a web application in which I applied the knowledge
-              purchased in React, making an E-commerce page and connecting it
-              to firebase
-            </p>
+
+            <button id="firstProject" class="project__infoButton">More info...</button>
+
             <div class="projects__projectRedirections">
               <a href="#" class="projectLink__left projects__projectLink">Web Page</a>
               <a href="#" class="projectLink__right projects__projectLink">GitHub</a>
@@ -166,6 +158,38 @@
             </div>
           </div>
         </article>
+
+        <div class="modal" id="firstModal">
+          <div class="projects__modalContent">
+            <span class="modal__closeBtn">&times;</span>
+            <img src="./Assets/Images/Ecommerce.png" alt="Imagen del proyecto" class="projects__modalImg" />
+            <div class="projects__modalRight">
+              <h3 class="projects__projectTitle">Página Estática</h3>
+              <hr />
+
+              <p class="projects__projectText projects__centerText">
+                This project uses:
+              </p>
+              <p class="projects__projectText projects__centerText">
+                HTML - CSS
+              </p>
+              <hr />
+
+              <p class="projects__projectText">
+                It's a web page that has the objective of demonstrating the
+                knowledge acquired in the CoderHouse HTML and CSS course
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, laboriosam tempora ex earum blanditiis id. Quibusdam dolorum eos error? Optio?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio blanditiis ad a qui quia doloribus eos sit quas nihil.
+              </p>
+
+              <div class="projects__projectRedirections">
+                <a href="#" class="projectLink__left projects__projectLink">Web Page</a>
+                <a href="#" class="projectLink__right projects__projectLink">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
 
@@ -438,6 +462,10 @@
 
     <!-- * Final de la Sección de Contacto -->
   </main>
+
+  <!-- Algoritmo de los modal -->
+  <script type="text/javascript" src="./JS/Modal.js" defer></script>
+
 
   <!-- Inicio de lógica de los Sorting Algorithms -->
   <script type="text/javascript" src="./JS/EnableDisableButtons.js" defer></script>
