@@ -106,53 +106,7 @@
 
         <section class="projects__container" id="projects__container">
           <!-- Primer modal (Ecommerce) -->
-          <div class="modal" id="modal">
-            <div class="projects__modalContent">
-              <span class="modal__closeBtn" id="modal__closeBtn">&times;</span>
-              <img
-                src="./Assets/Images/API-REST.JPG"
-                alt="Imagen del proyecto"
-                class="projects__modalImg"
-              />
-              <div class="projects__modalRight">
-                <h3 class="projects__projectTitle">API REST</h3>
-
-                <div class="projects__projectRedirections">
-                  <a href="#" class="projectLink__left projects__projectLink"
-                    >Web Page</a
-                  >
-                  <a href="#" class="projectLink__right projects__projectLink"
-                    >GitHub</a
-                  >
-                </div>
-
-                <hr />
-
-                <p class="projects__projectText projects__centerText">
-                  This project uses:
-                </p>
-                <p class="projects__projectText projects__centerText">
-                  Express - JavaScript - HTML - CSS
-                </p>
-                <hr />
-
-                <p class="projects__projectText">
-                  It's a server based on node.js and express that offers a REST
-                  API of products The API incorporates the next endpoints using
-                  express router: <br />
-                  - GET '/api/productos' -> Returns all products
-                  <br />
-                  - GET '/api/productos/:id' -> Returns a specific product
-                  <br />
-                  - POST '/api/productos' -> Receibes and add a product, then it
-                  return the product with its id <br />
-                  - PUT '/api/productos/:id' -> Receives and actualise a product
-                  <br />
-                  - DELETE '/api/productos/:id' -> Deletes an specific product
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="modal" id="modal"></div>
         </section>
       </section>
 
@@ -555,12 +509,13 @@
       <!-- * Final de la Sección de Contacto -->
     </main>
 
-    <!-- Algoritmo de los modal -->
-    <script type="text/javascript" src="./JS/Modal.js" defer></script>
-
+    <!-- Algoritmo del modal -->
     <script type="text/javascript" src="./Assets/data/projectsData.js"></script>
+
+    <script type="text/javascript" src="./JS/Modal.js"></script>
+
     <script type="text/javascript" src="./JS/RenderProjects.js"></script>
-    
+
     <!-- Inicio de lógica de los Sorting Algorithms -->
     <script
       type="text/javascript"
