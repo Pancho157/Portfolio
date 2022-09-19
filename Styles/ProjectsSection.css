@@ -139,18 +139,35 @@
 }
 
 .projects__modalContent {
-  width: 800px;
-  min-height: 400px;
+  max-width: 800px;
+  height: 550px;
 
   padding: 20px;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
   column-gap: 20px;
   row-gap: 20px;
   border-radius: 15px;
   overflow: auto;
+
+  /* Para firefox */
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Para Chrome, Edge y Safari */
+.projects__modalContent::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+}
+
+/* Add a thumb */
+.projects__modalContent::-webkit-scrollbar-thumb {
+  background: #5c6bc0;
 }
 
 .modal__closeBtn {
@@ -161,20 +178,20 @@
 }
 
 .projects__modalImg {
-  flex-shrink: 2;
-  max-width: 40%;
+  /* max-width: 40%; */
+  width: 90%;
+  height: 400px;
   object-fit: contain;
   border-radius: 10px;
   background-color: #494949bb;
 }
 
 .projects__modalRight {
-  flex-shrink: 2;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   row-gap: 10px;
+  overflow-y: auto;
 }
 
 /* * Final de los estilos de Modal */
