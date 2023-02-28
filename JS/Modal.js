@@ -66,7 +66,7 @@ function openModalSpanish(index) {
 
         <hr />
             
-        <p class="projects__projectText projects__centerText">>Este proyecto utiliza: </p>
+        <p class="projects__projectText projects__centerText">Este proyecto utiliza: </p>
             
         <p class="projects__projectText projects__centerText">
           ${projectsSpanish[index].technologies}
