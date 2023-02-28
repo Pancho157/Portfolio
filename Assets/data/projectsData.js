@@ -32,9 +32,9 @@ const projects = [
     title: "Games App",
     description:
       "It's an educational app (with no specific topic loaded) for small childs     <br>It's objective is to to get to the final stage and to do so you must read a text within the main page, have a multiple choice quiz about ir, and if you have a grade higher than 7, you can play a mini game and go to the next stage      <br>- The page saves the last stage played on local storage to not lose the progress of the user",
-    imgURL: "./Assets/Images/App de juegos.png",
-    webPage: "#",
-    github: "#",
+    imgURL: "./Assets/Images/games-app.gif",
+    webPage: "https://games-app.netlify.app/pages/memoria.html",
+    github: "https://github.com/Pancho157/Proyecto-final-JavaScript",
     technologies: "HTML - CSS - JS",
   },
 ];
@@ -75,9 +75,9 @@ const projectsSpanish = [
     title: "Games App",
     description:
       "Es una aplicación educativa (sin un tema específico cargado) para niños pequeños     <br>Su objetivo es llegar a la etapa final y para hacerlo debes leer ciertos textos cargados en la app, hacer una prueba de opción múltiple, lo cual, en el caso de sacar una nota mayor a 7 el jugador puede jugar a un mini juego y avanzar al siguiente escenario.    <br>- la página guarda el escenario en el cual quedó el jugador dentro del localStorage del usuario para no perder el progreso del mismo",
-    imgURL: "./Assets/Images/App de juegos.png",
-    webPage: "#",
-    github: "#",
+    imgURL: "./Assets/Images/games-app.gif",
+    webPage: "https://games-app.netlify.app/pages/memoria.html",
+    github: "https://github.com/Pancho157/Proyecto-final-JavaScript",
     technologies: "HTML - CSS - JS",
   },
 ];
