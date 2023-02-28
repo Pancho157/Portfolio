@@ -19,12 +19,12 @@ function openModal(index) {
       <img src="${projects[index].imgURL}" alt="Imagen del proyecto" class="projects__modalImg"/>
     
       <div class="projects__modalRight">
-      <h3 class="projects__projectTitle">API REST</h3>
+      <h3 class="projects__projectTitle">${projects[index].title}</h3>
     
         <div class="projects__projectRedirections">
-          <a href="${projects[index].webPage}" class="projectLink__left projects__projectLink">Web Page</a>
+          <a href="${projects[index].webPage}" class="projectLink__left projects__projectLink" target="_blank">Web Page</a>
 
-          <a href="${projects[index].github}" class="projectLink__right projects__projectLink">GitHub</a>
+          <a href="${projects[index].github}" class="projectLink__right projects__projectLink" target="_blank">GitHub</a>
         </div>
 
         <hr />
@@ -56,17 +56,17 @@ function openModalSpanish(index) {
       <img src="${projectsSpanish[index].imgURL}" alt="Imagen del proyecto" class="projects__modalImg"/>
     
       <div class="projects__modalRight">
-      <h3 class="projects__projectTitle">API REST</h3>
+      <h3 class="projects__projectTitle">${projectsSpanish[index].title}</h3>
     
         <div class="projects__projectRedirections">
-          <a href="${projectsSpanish[index].webPage}" class="projectLink__left projects__projectLink">Web Page</a>
+          <a href="${projectsSpanish[index].webPage}" class="projectLink__left projects__projectLink" target="_blank">Página Web</a>
 
-          <a href="${projectsSpanish[index].github}" class="projectLink__right projects__projectLink">GitHub</a>
+          <a href="${projectsSpanish[index].github}" class="projectLink__right projects__projectLink" target="_blank">GitHub</a>
         </div>
 
         <hr />
             
-        <p class="projects__projectText projects__centerText">This project uses: </p>
+        <p class="projects__projectText projects__centerText">>Este proyecto utiliza: </p>
             
         <p class="projects__projectText projects__centerText">
           ${projectsSpanish[index].technologies}

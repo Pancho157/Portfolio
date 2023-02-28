@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <button onClick="openModal(${index})" class="project__infoButton projectModal ">More info...</button>
 
             <div class="projects__projectRedirections">
-                <a href="${project.webPage}" class="projectLink__left projects__projectLink">Web Page</a>
+                <a href="${project.webPage}" class="projectLink__left projects__projectLink" target="_blank">Web Page</a>
 
-                <a href="${project.github}" class="projectLink__right projects__projectLink">GitHub</a>
+                <a href="${project.github}" class="projectLink__right projects__projectLink" target="_blank">GitHub</a>
             </div>
             </div>
         </article>
