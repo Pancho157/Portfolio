@@ -36,10 +36,12 @@ const projects = [
   },
 ];
 
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 const projectsSpanish = [
   {
-    title: "Products API REST",
-    technologies: "Express - JavaScript - HTML - CSS",
+    title: "API REST",
+    technologies: "Express - Sockets - Sessions - JWT",
     description:
       "It's a server based on node.js and express that offers a REST API of products <br> The API incorporates the next endpoints using express router: <br>- GET '/api/productos' -> Returns all products <br>- GET '/api/productos/:id' -> Returns a specific product <br>- POST '/api/productos' -> Receibes and add a product, then it return the product with its id <br>- PUT '/api/productos/:id' -> Receives and actualise a product <br>- DELETE '/api/productos/:id' -> Deletes an specific product",
     imgURL: "./Assets/Images/API-REST.JPG",

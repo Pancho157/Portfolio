@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="projects__projectRight">
               <h3 class="projects__projectTitle">${project.title}</h3>
   
-              <button onClick="openModal(${index})" class="project__infoButton projectModal ">More info...</button>
+              <button onClick="openModalSpanish(${index})" class="project__infoButton projectModal ">More info...</button>
   
               <div class="projects__projectRedirections">
                   <a href="${project.webPage}" class="projectLink__left projects__projectLink">Web Page</a>

@@ -12,7 +12,6 @@ function outsideClick(e) {
 }
 
 function openModal(index) {
-  console.log(modal);
   modal.innerHTML = `
     <div class="projects__modalContent">
       <span class="modal__closeBtn" onClick="closeModal()">&times;</span>
@@ -40,6 +39,43 @@ function openModal(index) {
             
         <p class="projects__projectText">
           ${projects[index].description}
+        </p>
+      </div>
+    </div>
+  `;
+
+  // Renderiza el modal
+  modal.style.display = "flex";
+}
+
+function openModalSpanish(index) {
+  modal.innerHTML = `
+    <div class="projects__modalContent">
+      <span class="modal__closeBtn" onClick="closeModal()">&times;</span>
+    
+      <img src="${projectsSpanish[index].imgURL}" alt="Imagen del proyecto" class="projects__modalImg"/>
+    
+      <div class="projects__modalRight">
+      <h3 class="projects__projectTitle">API REST</h3>
+    
+        <div class="projects__projectRedirections">
+          <a href="${projectsSpanish[index].webPage}" class="projectLink__left projects__projectLink">Web Page</a>
+
+          <a href="${projectsSpanish[index].github}" class="projectLink__right projects__projectLink">GitHub</a>
+        </div>
+
+        <hr />
+            
+        <p class="projects__projectText projects__centerText">This project uses: </p>
+            
+        <p class="projects__projectText projects__centerText">
+          ${projectsSpanish[index].technologies}
+        </p>
+            
+        <hr />
+            
+        <p class="projects__projectText">
+          ${projectsSpanish[index].description}
         </p>
       </div>
     </div>
