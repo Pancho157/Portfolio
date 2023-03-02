@@ -1,21 +1,26 @@
+(function () {
+  emailjs.init("tkDrfnhgir9OuL802");
+})();
+
 const form = document.getElementById("form");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+  const params = {
+    author: document.getElementById("author").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
 
-  const author = document.getElementById("author").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
+  const serviceId = "service_wf72wi6";
+  const templateID = "template_qbtuk6a";
 
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "mf.franciscomuniz@gmail.com",
-    Password: "kjzcungqeaqrbbuq",
-    To: "mf.franciscomuniz@gmail.com",
-    From: author,
-    Subject: subject,
-    Body: `Enviado por: ${author} <br><br>Asunto: ${subject} <br><br>Mensaje: ${message}`,
-  }).then(() =>
-    alert("Thanks for contacting, i'll be sending a message as soon as posible")
-  );
+  emailjs
+    .send(serviceId, templateID, params)
+    .then(() => {
+      document.getElementById("author").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
+    })
+    .catch((err) => console.log(err));
 });
